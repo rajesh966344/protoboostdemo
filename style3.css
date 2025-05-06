@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: linear-gradient(to right, #fefcea, #ee9b16);
+    color: #333;
+    padding: 40px 10px;
+  }
+  
+  header {
+    background: none;
+    padding: 20px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-size: 40px;
+    color: #d902ff; ;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+ 
+  form {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  td {
+    padding: 12px 8px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  select,
+  input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: 0.3s ease;
+  }
+  
+  input:focus,
+  select:focus {
+    border-color: #f1c40f;
+    outline: none;
+  }
+  
+  input[type="submit"],
+  input[type="reset"] {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  input[type="submit"]:hover,
+  input[type="reset"]:hover {
+    background-color: #d35400;
+  }
+  
+  a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    color: #e67e22;
+  }
+  
+  hr {
+    margin: 30px auto;
+    width: 80%;
+    border: 1px solid #ccc;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+.buzzer-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  background-color: #ff4757;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none; /* Removes underline */
+}
+
+.buzzer-btn:hover {
+  background-color: #e84118;
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.content {
+  width: 55%;
+  padding: 20px;
+  text-align: center; /* This centers the button under left content */
+}
+
+  

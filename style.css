@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {    
+    background: linear-gradient(to right, #c2e9fb, #a1c4fd);
+    color: #333;
+    padding: 40px 10px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  header {
+    background: #222;
+    padding: 20px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-size: 40px;
+    color: #d902ff; ;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0;
+  }
+
+  .hero-img {
+    width: 60%;
+    max-width: 500px;  /* Limit the largest size */
+    height: auto;
+    display: block;
+    margin: 40px auto; /* Centers the image */
+    border-radius: 12px; /* Optional: Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+  }
+  
+  
+  .hero .text {
+    max-width: 50%;
+  }
+  
+  footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+.buzzer-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 16px 36px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  background-color: #ff4757;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none; /* Removes underline */
+}
+
+.buzzer-btn:hover {
+  background-color: #e84118;
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.content {
+  width: 55%;
+  padding: 20px;
+  text-align: center; /* This centers the button under left content */
+}

@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background: #222;
+    padding: 20px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-size: 40px;
+    color: #d902ff; ;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Feature Section */
+  .section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 80px 10%;
+    border-bottom: 1px solid #e0e0e0;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.6s ease-out;
+    flex-wrap: nowrap;
+  }
+  
+  .section.reverse {
+    flex-direction: row-reverse;
+    background-color: #fff;
+  }
+  
+  .section img {
+    width: 40%;
+    min-width: 280px;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+  
+  .content {
+    width: 55%;
+    padding: 20px;
+  }
+  
+  .content h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #222;
+  }
+  
+  .content p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .visible {
+    transform: scale(1);
+    opacity: 1; }
+  
+  /* Responsive Support */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+      padding-top: 10px;
+    }
+  
+    .section {
+      flex-direction: column;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+  
+    .section.reverse {
+      flex-direction: column;
+    }
+  
+    .section img,
+    .content {
+      width: 100%;
+    }
+  
+    .content {
+      padding-top: 20px;
+    }
+  
+    .content h2 {
+      font-size: 24px;
+    }
+  
+    .content p {
+      font-size: 15px;
+    }
+  }
+
+  footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+.buzzer-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 16px 36px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  background-color: #ff4757;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none; /* Removes underline */
+}
+
+.buzzer-btn:hover {
+  background-color: #e84118;
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.content {
+  width: 55%;
+  padding: 20px;
+  text-align: center; /* This centers the button under left content */
+}
+
+  
